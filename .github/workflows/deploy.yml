@@ -17,7 +17,7 @@ jobs:
         run: echo "${{ secrets.TOKEN_SECRETO }}"
 
       - name: Install redis cli
-        run: sudo apt-get update -y && apt-get install redis-tools -y
+        run: sudo apt-get update -y && sudo apt-get install redis-tools -y
 
       - name: Test redis connection
         run: redis-cli -h localhost -p 6379 ping
