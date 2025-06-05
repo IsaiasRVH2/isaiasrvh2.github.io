@@ -10,4 +10,4 @@ jobs:
       - name: Print variable
         run: echo "${{ secrets.TOKEN_SECRETO }}"
 
-      -name: setup
+      
